@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="erd-kopma" name="ERD Kopma">
-    <mxGraphModel dx="1935" dy="1243" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="1586" dy="962" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -687,6 +687,9 @@
         </mxCell>
         <mxCell id="k8HktN4nKXylVMSEJKDd-126" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;PENELUSURAN KI → JALUR ERD&lt;br/&gt;&lt;br/&gt;KI-01 Omzet &amp;amp; jumlah nota per hari/bulan → penjualan → detail_penjualan&lt;br/&gt;KI-02 Lima barang terlaris per bulan → barang → detail_penjualan → penjualan&lt;br/&gt;KI-03 Barang di bawah stok minimum → barang&lt;br/&gt;KI-04 Sepuluh anggota belanja terbesar → anggota → penjualan → detail_penjualan&lt;br/&gt;KI-05 Poin diperoleh &amp;amp; ditukar per bulan → anggota → penjualan → transaksi_poin&lt;br/&gt;KI-06 Sepuluh anggota poin terbanyak → anggota → penjualan → transaksi_poin&lt;/code&gt;&lt;/pre&gt;" vertex="1">
           <mxGeometry height="136" width="1172" x="14" y="889" as="geometry" />
+        </mxCell>
+        <mxCell id="k8HktN4nKXylVMSEJKDd-127" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Rizal hafiz_2543003_kelas_A" vertex="1">
+          <mxGeometry height="154" width="524" x="662" y="1031" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
