@@ -1,17 +1,17 @@
 <mxfile host="app.diagrams.net">
   <diagram id="erd-kopma" name="ERD Kopma">
-    <mxGraphModel dx="1586" dy="962" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="1886" dy="1145" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="judul" parent="1" style="text;html=0;whiteSpace=nowrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#1F3864;fontStyle=1;fontFamily=Verdana;" value="ERD fisik Kopma: setiap kolom beserta tipe data dan constraint (acuan DDL Modul 5)" vertex="1">
+        <mxCell id="judul" parent="1" style="text;html=0;whiteSpace=nowrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#1F3864;fontStyle=1;fontFamily=Verdana;" value="ERD konseptual koperasi mahasiswa sejahtera (kopma)" vertex="1">
           <mxGeometry height="20" width="900" x="103" y="11" as="geometry" />
         </mxCell>
         <mxCell id="k8HktN4nKXylVMSEJKDd-119" edge="1" parent="1" source="t_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERzeroToMany;endFill=0;">
           <mxGeometry relative="1" x="-0.0752" as="geometry">
             <Array as="points">
-              <mxPoint x="24" y="94" />
-              <mxPoint x="24" y="630" />
+              <mxPoint x="23" y="94" />
+              <mxPoint x="23" y="630" />
             </Array>
             <mxPoint x="397.48" y="630" as="targetPoint" />
           </mxGeometry>
@@ -160,7 +160,7 @@
           <mxGeometry height="17" width="110" x="177" y="144" as="geometry" />
         </mxCell>
         <mxCell id="t_pemasok" parent="1" style="swimlane;horizontal=1;html=0;whiteSpace=wrap;fontStyle=1;fontSize=13;fontFamily=Verdana;fontColor=#FFFFFF;startSize=25;fillColor=#1565C0;strokeColor=#1565C0;swimlaneFillColor=#FFFFFF;rounded=1;arcSize=8;strokeWidth=2;collapsible=0;align=center;verticalAlign=middle;" value="pemasok" vertex="1">
-          <mxGeometry height="95" width="292" x="46" y="381" as="geometry" />
+          <mxGeometry height="95" width="292" x="39" y="380" as="geometry" />
         </mxCell>
         <mxCell id="pemasok_r0_badge" parent="t_pemasok" style="rounded=1;arcSize=20;html=0;whiteSpace=nowrap;strokeColor=#E07B1F;fillColor=#FFF4E8;fontColor=#C25E00;fontStyle=1;fontSize=7;fontFamily=Verdana;strokeWidth=1;align=center;verticalAlign=middle;spacing=0;" value="PK" vertex="1">
           <mxGeometry height="13" width="32" x="4" y="27" as="geometry" />
@@ -688,8 +688,8 @@
         <mxCell id="k8HktN4nKXylVMSEJKDd-126" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;PENELUSURAN KI → JALUR ERD&lt;br/&gt;&lt;br/&gt;KI-01 Omzet &amp;amp; jumlah nota per hari/bulan → penjualan → detail_penjualan&lt;br/&gt;KI-02 Lima barang terlaris per bulan → barang → detail_penjualan → penjualan&lt;br/&gt;KI-03 Barang di bawah stok minimum → barang&lt;br/&gt;KI-04 Sepuluh anggota belanja terbesar → anggota → penjualan → detail_penjualan&lt;br/&gt;KI-05 Poin diperoleh &amp;amp; ditukar per bulan → anggota → penjualan → transaksi_poin&lt;br/&gt;KI-06 Sepuluh anggota poin terbanyak → anggota → penjualan → transaksi_poin&lt;/code&gt;&lt;/pre&gt;" vertex="1">
           <mxGeometry height="136" width="1172" x="14" y="889" as="geometry" />
         </mxCell>
-        <mxCell id="k8HktN4nKXylVMSEJKDd-127" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Rizal hafiz_2543003_kelas_A" vertex="1">
-          <mxGeometry height="154" width="524" x="662" y="1031" as="geometry" />
+        <mxCell id="k8HktN4nKXylVMSEJKDd-127" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Rizal hafiz - 25430003 - kelas A" vertex="1">
+          <mxGeometry height="129" width="518" x="662" y="1056" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
