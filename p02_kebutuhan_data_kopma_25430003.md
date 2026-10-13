@@ -64,6 +64,7 @@ Penjualan dan Detail Penjualan dipisahkan karena Penjualan menyimpan informasi u
 | AB-04 | Harga jual yang dipakai pada nota disimpan per baris dan tidak berubah meski harga barang kemudian naik. | Kutipan ketua: "Harga barang sering naik, jadi kami bingung saat melihat nota lama." |
 | AB-05 | NIM anggota unik; pencarian anggota dapat dilakukan lewat nomor anggota atau NIM. | Kutipan kasir: "Anggota sering lupa membawa kartu, jadi kami mencarinya lewat NIM." |
 | AB-06 | Pesanan pembelian dibuat bila stok kurang dari batas minimum barang tersebut. | Paragraf 2: "Bila stok suatu barang di bawah batas minimum, ia membuat pesanan pembelian ke pemasok." |
+| AB-08 | Setiap transaksi pembelian yang melibatkan penerimaan barang dari pemasok harus dikaitkan dengan tepat satu petugas gudang yang bertanggung jawab menerima barang tersebut, sedangkan satu petugas gudang dapat menangani nol atau banyak transaksi pembelian. Contoh: transaksi pembelian PB-001 dicatat atas nama petugas gudang PT-001 yang menerima barang dari pemasok. | Titik Analisis 3 Pertemuan 3 |
 
 ## 6. Kebutuhan informasi
 
