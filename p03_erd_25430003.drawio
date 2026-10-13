@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="erd-cendekia" name="ERD Konseptual">
-    <mxGraphModel dx="2145" dy="1302" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1520" pageHeight="900" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1989" dy="1207" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1520" pageHeight="900" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -252,7 +252,10 @@
           <mxGeometry height="130" width="1440" x="40" y="670" as="geometry" />
         </mxCell>
         <mxCell id="WzX3CZ7hgVfjvBO9EXej-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="RIZAL HAFIZ - 25430003 - KELAS A" vertex="1">
-          <mxGeometry height="130" width="478" x="1002" y="814" as="geometry" />
+          <mxGeometry height="130" width="478" x="1001" y="1062" as="geometry" />
+        </mxCell>
+        <mxCell id="y_gzqmHzW7kHHa9O0N8Q-5" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;" value="&lt;h3&gt;&lt;br&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CATATAN TINJAUAN KLIEN ( di isi dari teman sekelas yang berperan sebagai kepala perpustakaan)&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Peninjau:&lt;/strong&gt; Mutiara Icha Yani — 25430025&lt;strong&gt;Peran:&lt;/strong&gt; Ketua Perpustakaan&amp;nbsp;&lt;strong&gt;Tanggal:&lt;/strong&gt; 13 Oktober 2026&lt;/p&gt;&lt;ol start=&quot;1&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Umpan balik:&lt;/strong&gt; Garis relasi antara &lt;code&gt;buku&lt;/code&gt; dan &lt;code&gt;eksemplar&lt;/code&gt; sudah menunjukkan hubungan satu-ke-banyak. Namun, perlu dipastikan bahwa setiap eksemplar selalu terhubung dengan satu judul buku agar data koleksi tidak berdiri sendiri.&lt;br&gt;&lt;strong&gt;Keputusan:&lt;/strong&gt; Diterima.&lt;br&gt;&lt;strong&gt;Alasan:&lt;/strong&gt; Masukan ini sesuai dengan aturan bisnis AB-03, sehingga hubungan antara judul buku dan setiap eksemplar perlu dipastikan tetap konsisten.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Umpan balik:&lt;/strong&gt; Pada entitas &lt;code&gt;detail_peminjaman&lt;/code&gt;, sudah terdapat atribut &lt;code&gt;tanggal_jatuh_tempo&lt;/code&gt;, &lt;code&gt;tanggal_pengembalian&lt;/code&gt;, dan &lt;code&gt;denda&lt;/code&gt;. Sebaiknya dijelaskan bahwa tanggal pengembalian dapat kosong selama buku masih dipinjam, sehingga status keterlambatan dapat dihitung dengan benar.&lt;br&gt;&lt;strong&gt;Keputusan:&lt;/strong&gt; Diterima.&lt;br&gt;&lt;strong&gt;Alasan:&lt;/strong&gt; Masukan ini membantu memperjelas pencatatan pengembalian dan perhitungan keterlambatan tanpa mengubah struktur utama ERD.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="212" width="1429" x="50" y="825" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
