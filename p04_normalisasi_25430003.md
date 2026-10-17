@@ -219,6 +219,6 @@ ERD tetap dipertahankan karena atribut `hari_terlambat`, total denda, jumlah tra
 
 ERD tetap menggunakan `id_detail` sebagai kunci primer pada entitas `detail_peminjaman`, sesuai rancangan ERD awal dan kamus data P02 Bagian 8 nomor 29. Walaupun hasil normalisasi menetapkan pasangan `(nomor_peminjaman, id_eksemplar)` sebagai kunci primer komposit, `id_detail` tetap dipertahankan sebagai identitas unik detail peminjaman dalam ERD. Perbedaan ini dicatat sebagai keputusan rancangan agar identitas detail tetap menggunakan atribut yang telah ditetapkan dalam dokumen kebutuhan data.
 
-Pasangan `(nomor_peminjaman, id_eksemplar)` tetap menjadi kunci unik di `detail_peminjaman`, agar satu eksemplar tidak tercatat dua kali di satu slip. Karena pasangan itu tetap kunci kandidat, hasil BCNF di Bagian 7 tidak berubah.
+Kunci unik gabungan `nomor_peminjaman` dan `id_eksemplar` dipertahankan supaya eksemplar yang sama tidak tercatat lebih dari sekali dalam satu transaksi peminjaman. Karena gabungan kedua atribut tersebut tetap menjadi kunci kandidat, kesimpulan pemeriksaan BCNF pada Bagian 7 tetap berlaku.
 
 **Kesimpulan:** ERD tidak berubah. Entitas `kategori_buku` dan `penerbit` tetap dipertahankan karena merupakan bagian dari kebutuhan data P02, atribut nilai turunan tidak ditambahkan sebagai atribut tersimpan, dan `id_detail` tetap digunakan sebagai kunci primer sesuai rancangan ERD awal.
