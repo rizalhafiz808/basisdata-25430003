@@ -114,3 +114,13 @@ Catatan pemeriksaan:
 ### Titik Analisis 3
 
 Informasi mengenai pemasok kini disimpan dalam tabel `pemasok` dan dihubungkan dengan transaksi pembelian melalui tabel `pembelian` serta `detail_pembelian`. Dengan cara ini, identitas pemasok disimpan secara terpusat sehingga perbedaan penulisan nama, seperti “CV Sumber ATK” dan “CV. Sumber A.T.K”, dapat dihindari. Selain itu, data pemasok tetap tersimpan meskipun salah satu nota pembelian dihapus, sehingga informasi pemasok tidak ikut hilang. Struktur ini juga memungkinkan satu pemasok memasok berbagai barang dan riwayat pembelian ditelusuri melalui tabel yang saling berhubungan.
+
+## 9. Ringkasan Tahapan Normalisasi
+
+| Tahap | Relasi hasil | Masalah yang dihilangkan | FD yang dipakai |
+|---|---|---|---|
+| UNF | NOTA_UNF | Belum ada; merupakan bentuk awal dengan grup atribut barang yang berulang. | – |
+| 1NF | NOTA_1NF | Menghilangkan grup berulang dengan membuat satu baris untuk setiap barang pada nota. Setiap nilai atribut menjadi atomik. | FD1: `no_nota_penjualan -> tgl_penjualan, kode_petugas, no_anggota`; FD4: `kode_barang -> nama_barang`; FD5: `(no_nota_penjualan, kode_barang) -> qty_detail_penjualan, harga_satuan_detail_penjualan` |
+| 2NF | PENJUALAN, DETAIL_PENJUALAN, BARANG | Menghilangkan ketergantungan parsial pada sebagian kunci komposit. | FD1: `no_nota_penjualan -> tgl_penjualan, kode_petugas, no_anggota`; FD4: `kode_barang -> nama_barang`; FD5: `(no_nota_penjualan, kode_barang) -> qty_detail_penjualan, harga_satuan_detail_penjualan` |
+| 3NF | PENJUALAN, DETAIL_PENJUALAN, BARANG, PETUGAS, ANGGOTA | Menghilangkan ketergantungan transitif dengan memisahkan data petugas dan anggota dari relasi penjualan. | FD2: `kode_petugas -> nama_petugas`; FD3: `no_anggota -> nama_anggota`; FD1: `no_nota_penjualan -> kode_petugas, no_anggota` |
+| Hasil akhir | PENJUALAN, DETAIL_PENJUALAN, BARANG, PETUGAS, ANGGOTA | Nilai turunan tidak disimpan pada tabel operasional sehingga tidak terjadi ketidakkonsistenan akibat penyimpanan nilai hasil perhitungan. | FD6: `(qty_detail_penjualan, harga_satuan_detail_penjualan) -> subtotal_detail_penjualan` |
