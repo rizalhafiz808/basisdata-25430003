@@ -43,7 +43,10 @@ CREATE TABLE barang (
         CHECK (stok_barang >= 0),
 
     CONSTRAINT ck_barang_harga
-        CHECK (harga_jual_barang >= 0)
+        CHECK (harga_jual_barang >= 0),
+
+    CONSTRAINT ck_barang_stok_min
+        CHECK (stok_min_barang >= 0)
 ) ENGINE = InnoDB;
 
 -- 3. Membuat tabel anggota
@@ -91,6 +94,7 @@ CREATE TABLE penjualan (
     CONSTRAINT fk_penjualan_anggota
         FOREIGN KEY (id_anggota)
         REFERENCES anggota (id_anggota)
+        ON DELETE SET NULL
 ) ENGINE = InnoDB;
 
 -- 6. Membuat tabel detail_penjualan
